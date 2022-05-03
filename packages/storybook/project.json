@@ -3,7 +3,7 @@
   "sourceRoot": "packages/storybook/src",
   "projectType": "application",
   "targets": {
-    "build": {
+    "build-react-app": {
       "executor": "@nrwl/web:webpack",
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
@@ -46,7 +46,7 @@
         }
       }
     },
-    "serve": {
+    "serve-react-app": {
       "executor": "@nrwl/web:dev-server",
       "defaultConfiguration": "development",
       "options": {
@@ -63,14 +63,14 @@
         }
       }
     },
-    "lint": {
+    "lint-react-app": {
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": ["packages/storybook/**/*.{ts,tsx,js,jsx}"]
       }
     },
-    "test": {
+    "test-react-app": {
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/packages/storybook"],
       "options": {
@@ -78,7 +78,7 @@
         "passWithNoTests": true
       }
     },
-    "storybook": {
+    "start": {
       "executor": "@nrwl/storybook:storybook",
       "options": {
         "uiFramework": "@storybook/react",
@@ -93,7 +93,7 @@
         }
       }
     },
-    "build-storybook": {
+    "build": {
       "executor": "@nrwl/storybook:build",
       "outputs": ["{options.outputPath}"],
       "options": {
