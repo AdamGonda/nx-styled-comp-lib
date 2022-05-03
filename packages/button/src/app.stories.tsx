@@ -1,8 +1,4 @@
-// Button.stories.js|jsx
-
-import React from 'react';
-
-import { Button } from '@nx-styled-comp-lib/button'
+import Button from './button'
 
 
 export default {

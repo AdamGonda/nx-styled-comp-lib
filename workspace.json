@@ -2,7 +2,6 @@
   "version": 2,
   "projects": {
     "button": "packages/button",
-    "storybook": "packages/storybook",
-    "text": "packages/text"
+    "storybook": "packages/storybook"
   }
 }
