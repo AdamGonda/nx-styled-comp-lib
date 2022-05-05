@@ -1,18 +1,17 @@
+import React from 'react';
 import styled from 'styled-components';
+import MuiButton, { ButtonProps as MuiProps } from '@mui/material/Button';
 
-/* eslint-disable-next-line */
-export interface ButtonProps {}
-
-const StyledButton = styled.div`
-  color: red;
-`;
-
-export function Button(props: ButtonProps) {
-  return (
-    <StyledButton>
-      <h1>Welcome to Button!</h1>
-    </StyledButton>
-  );
+export interface ButtonProps extends MuiProps {
+  children: React.ReactNode;
 }
 
-export default Button;
+export default function ({ children, ...restProps }: ButtonProps) {
+  return <StyledMuiButton {...restProps}>{children}</StyledMuiButton>;
+}
+
+const StyledMuiButton = styled(MuiButton)`
+  && {
+    text-transform: none;
+  }
+`;
