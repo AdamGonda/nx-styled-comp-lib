@@ -10,7 +10,7 @@ This project was generated using [Nx](https://nx.dev).
 `npx create-nx-workspace --preset=ts`
 
 ### create a library
-`nx g @nrwl/react:library`
+`nx g @nrwl/react:library --buildalbe`
 
 ### create storybook (it's a react app then storybook added)
 `nx g @nrwl/react:application`
