@@ -9,11 +9,17 @@ This project was generated using [Nx](https://nx.dev).
 ### create the workspace/project
 `npx create-nx-workspace --preset=ts`
 
+### install react plugin
+`yarn add @nrwl/react`
+
 ### create a library
 `nx g @nrwl/react:library --buildable --style styled-components`
 
 ### create storybook (it's a react app then storybook added)
 `nx g @nrwl/react:application`
+
+### init storybook
+`npx sb init`
 
 <p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
 
