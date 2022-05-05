@@ -6,14 +6,14 @@ This project was generated using [Nx](https://nx.dev).
 
 ## To reproduce
 
-### to create the workspace/project
-npx create-nx-workspace --preset=ts
+### create the workspace/project
+`npx create-nx-workspace --preset=ts`
 
-### to create a library
-nx g @nrwl/react:library
+### create a library
+`nx g @nrwl/react:library`
 
-### to create storybook (it's a react app then storybook added)
-nx g @nrwl/react:application
+### create storybook (it's a react app then storybook added)
+`nx g @nrwl/react:application`
 
 <p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
 
