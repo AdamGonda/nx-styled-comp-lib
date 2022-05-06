@@ -1,6 +1,6 @@
 {
-  "root": "packages/storybook",
-  "sourceRoot": "packages/storybook/src",
+  "root": "apps/storybook",
+  "sourceRoot": "apps/storybook/src",
   "projectType": "application",
   "targets": {
     "build-react-app": {
@@ -9,15 +9,15 @@
       "defaultConfiguration": "production",
       "options": {
         "compiler": "babel",
-        "outputPath": "dist/packages/storybook",
-        "index": "packages/storybook/src/index.html",
+        "outputPath": "dist/apps/storybook",
+        "index": "apps/storybook/src/index.html",
         "baseHref": "/",
-        "main": "packages/storybook/src/main.tsx",
-        "polyfills": "packages/storybook/src/polyfills.ts",
-        "tsConfig": "packages/storybook/tsconfig.app.json",
+        "main": "apps/storybook/src/main.tsx",
+        "polyfills": "apps/storybook/src/polyfills.ts",
+        "tsConfig": "apps/storybook/tsconfig.app.json",
         "assets": [
-          "packages/storybook/src/favicon.ico",
-          "packages/storybook/src/assets"
+          "apps/storybook/src/favicon.ico",
+          "apps/storybook/src/assets"
         ],
         "styles": [],
         "scripts": [],
@@ -33,8 +33,8 @@
         "production": {
           "fileReplacements": [
             {
-              "replace": "packages/storybook/src/environments/environment.ts",
-              "with": "packages/storybook/src/environments/environment.prod.ts"
+              "replace": "apps/storybook/src/environments/environment.ts",
+              "with": "apps/storybook/src/environments/environment.prod.ts"
             }
           ],
           "optimization": true,
@@ -67,14 +67,14 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["packages/storybook/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["apps/storybook/**/*.{ts,tsx,js,jsx}"]
       }
     },
     "test-react-app": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/packages/storybook"],
+      "outputs": ["coverage/apps/storybook"],
       "options": {
-        "jestConfig": "packages/storybook/jest.config.ts",
+        "jestConfig": "apps/storybook/jest.config.ts",
         "passWithNoTests": true
       }
     },
@@ -84,7 +84,7 @@
         "uiFramework": "@storybook/react",
         "port": 4400,
         "config": {
-          "configFolder": "packages/storybook/.storybook"
+          "configFolder": "apps/storybook/.storybook"
         }
       },
       "configurations": {
@@ -100,7 +100,7 @@
         "uiFramework": "@storybook/react",
         "outputPath": "dist/storybook/storybook",
         "config": {
-          "configFolder": "packages/storybook/.storybook"
+          "configFolder": "apps/storybook/.storybook"
         }
       },
       "configurations": {

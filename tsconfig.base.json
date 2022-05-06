@@ -15,8 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx-styled-comp-lib/button": ["packages/button/src/index.ts"],
-      "@nx-styled-comp-lib/text": ["packages/text/src/index.ts"]
+      "@nx-styled-comp-lib/button": ["packages/button/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
